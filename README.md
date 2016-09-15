@@ -1,2 +1,2 @@
 # Algorithms
-Some common algorithms for competitive proramming.
+Some common algorithms for competitive programming.
