@@ -1,0 +1,31 @@
+STL Map
+
+Creates a lookup table. You can map objects of one data type to that of another.
+Defined in the header -> map
+
+Problem : Monazir, a little panda, has a list of N names and their 6-digit IDs, execute Q queries. Each query asks for the ID of a person. If the person does not exist in the list print “Sorry bro!” (without quotes) else print his/her ID. Interestingly, Monazir has just returned from CIIPPUS night and is a bit high. So he may give you repeated names. So before answering any query print the number of unique names in the list. 
+
+Input:
+8
+Arya 332981
+Jon 123451
+Robb 897641
+Sansa 341887
+Arya 332981
+Jon 123451
+Bran 332819
+Rickon 231245
+3
+Arya
+Meera
+Jon
+
+Output:
+6
+332981
+Sorry bro!
+123451
+
+Solution using map : http://ideone.com/tpJV8I
+
+Practice problems : www.spoj.com/problems/HOMO
