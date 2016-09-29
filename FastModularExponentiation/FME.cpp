@@ -1,4 +1,5 @@
 #include <iostream>
+#define MOD 1000000007
 using namespace std;
 
 long long fast_pow (long long b, int e) {
