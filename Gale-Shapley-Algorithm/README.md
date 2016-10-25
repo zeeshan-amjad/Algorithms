@@ -1,1 +1,1 @@
-#Gale Shapley Algorithm to solve the Stable Matching Problem
+Gale-Shapley Algorithm to solve the Stable Matching Problem.
