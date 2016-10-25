@@ -1,3 +1,5 @@
+//Tested for the problem UVa 1207 (Prince and Princess).
+
 #include <iostream>
 using namespace std;
 
