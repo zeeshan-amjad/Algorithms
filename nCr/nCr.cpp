@@ -1,6 +1,6 @@
 #define MOD 1000000007
 
-long long fact[100005], comb[100005], n;
+long long fact[100005], comb[100005];
 
 long long fast_pow (long long b, int e) {       //fast exponentiation
     b = b % MOD;
@@ -20,7 +20,7 @@ void init() {           //factorial initializer
         fact[i] = (i * fact[i - 1]) % MOD;
 }
 
-void combination() {
+void combination(n) {
     comb[0] = comb[n] = 1;
     for (int i = 1; i < n; ++i) 
         comb[i] = (fact[n] * fast_pow (fact[n - i] * fact[i], MOD - 2)) % MOD;    // inverse modulo in action
