@@ -8,7 +8,7 @@ long long fast_pow (long long b, int e) {
     while (e > 0) {
         if (e & 1)
             ans = (ans * b) % MOD;
-        e >> 1;
+        e >>= 1;
         b = (b * b) % MOD;
     }
     return ans % MOD;
