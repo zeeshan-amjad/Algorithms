@@ -18,4 +18,4 @@ def buildPrime (s):       #populates primes upto size s
             
         i += 2
         
-    return prime[s]
+    return prime[s - 1]        #returns the last stored prime
