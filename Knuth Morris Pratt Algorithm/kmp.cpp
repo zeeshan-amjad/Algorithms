@@ -1,3 +1,5 @@
+//tested on CodeChef judge: https://www.codechef.com/viewsolution/12358290
+
 #include <iostream>
 #include <cstring>
 #define MAX 1000001
