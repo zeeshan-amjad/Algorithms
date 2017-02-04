@@ -8,9 +8,11 @@ double f (double x) {
 }
 
 double bisectionMethod (double low, double hi, double pmid, double prec, int miter) {
-	if (!miter)
+	if (!miter) {
+		printf ("Does not converge!\n");
 		return pmid; //previous mid
-
+	}
+	
 	double cmid = (low + hi) / 2; //current mid
 
 	if (fabs (cmid - pmid) < prec) {
