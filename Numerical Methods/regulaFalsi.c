@@ -13,8 +13,10 @@ double regulaFalsi (double x1, double x2, double prev, double prec, int miter) {
 
 	double cur = (x1 * f (x2) - x2 * f (x1)) / (f (x2) - f (x1)); //current
 
-	if (fabs (cur - prev) < prec)
+	if (fabs (cur - prev) < prec) {
+		++it;
 		return cur;
+	}
 
 	printf ("Value at iteration %d: %lf\n", ++it, cur);
 
@@ -39,7 +41,7 @@ int main () {
 	while (1) {
 		if (f (x1) * f (x2) < 0) {
 			double root = regulaFalsi (x1, x2, -1, prec, miter);
-			printf ("\nRoot at iteration %d: %lf\n", ++it, root);
+			printf ("\nRoot at iteration %d: %lf\n", it, root);
 			break;
 		}
 
