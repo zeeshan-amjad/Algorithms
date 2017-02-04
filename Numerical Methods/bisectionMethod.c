@@ -13,9 +13,11 @@ double bisectionMethod (double low, double hi, double pmid, double prec, int mit
 
 	double cmid = (low + hi) / 2; //current mid
 
-	if (fabs (cmid - pmid) < prec)
+	if (fabs (cmid - pmid) < prec) {
+		++it;
 		return cmid;
-
+	}
+	
 	printf ("Value at iteration %d: %lf\n", ++it, cmid);
 
 	if (f (low) * f (cmid) < 0)
