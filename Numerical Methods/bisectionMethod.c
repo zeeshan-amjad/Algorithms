@@ -30,11 +30,11 @@ int main () {
 	printf ("Method: Bisection\n\nEnter the lower and upper limits: ");
 	scanf ("%lf %lf", &low, &hi);
 
-	printf ("Enter precision: ");
-	scanf ("%lf", &prec);
-
 	printf ("Enter maximum iterations: ");
 	scanf ("%d", &miter);
+	
+	printf ("Enter precision: ");
+	scanf ("%lf", &prec);
 
 	while (1) {
 		if (f (low) * f (hi) < 0) {
