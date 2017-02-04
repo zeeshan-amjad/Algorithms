@@ -8,9 +8,11 @@ double f (double x) {
 }
 
 double regulaFalsi (double x1, double x2, double prev, double prec, int miter) {
-	if (!miter)
+	if (!miter) {
+		printf ("Does not converge!\n");
 		return prev; //previous
-
+	}
+	
 	double cur = (x1 * f (x2) - x2 * f (x1)) / (f (x2) - f (x1)); //current
 
 	if (fabs (cur - prev) < prec) {
